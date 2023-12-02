@@ -65,7 +65,7 @@ const index = () => {
       {!isJoined ? (
         <form className='authInputsContainer'>
           <h1>Preencha os dados para entrar no chat</h1>
-          <input placeholder='Nome...' type="text" value={name} onChange={(e) => setName(e.target.value)} required />
+          <input placeholder='Nome de usuário...' type="text" value={name} onChange={(e) => setName(e.target.value)} required />
           <input type="email" placeholder='E-mail...' value={email} onChange={(e) => setEmail(e.target.value)} required />
           <input type="password" placeholder='Senha...' value={password} onChange={(e) => setPassword(e.target.value)} required />
           <button onClick={handleJoin}>Entrar no Chat</button>
