@@ -1,0 +1,16 @@
+@import '../../index.scss';
+    
+.containerFooter {
+
+    background-color: $maincolor;
+    p {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 20px;
+        a {
+            font-weight: 700;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
