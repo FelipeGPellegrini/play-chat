@@ -58,7 +58,10 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
       );
 
       if (!isValidPassword) {
-        client.emit('joinError', 'Senha incorreta');
+        client.emit(
+          'joinError',
+          'O e-mail fornecido já está cadastrado e não condiz com a senha fornecida.',
+        );
         return;
       }
 

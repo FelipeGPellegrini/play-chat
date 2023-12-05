@@ -3,16 +3,19 @@ import { ChatGateway } from './app.controller';
 import { User } from './user.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserService } from './user.service';
+import { config } from 'dotenv';
+
+config();
 
 @Module({
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
-      port: 5432,
-      username: 'chat',
-      password: 'chat123',
-      database: 'play-chat',
+      host: process.env.DB_URL,
+      port: Number(process.env.PORT),
+      username: process.env.USERNAME,
+      password: process.env.PASSWORD,
+      database: 'postgres',
       entities: [User],
       synchronize: true,
     }),

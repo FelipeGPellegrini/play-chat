@@ -4,8 +4,8 @@ services:
   postgres:
     image: postgres:latest
     environment:
-      POSTGRES_USER: chat
-      POSTGRES_PASSWORD: chat123
+      POSTGRES_USER: userchat
+      POSTGRES_PASSWORD: passwordchat
       POSTGRES_DB: play-chat
     ports:
       - "5432:5432"
