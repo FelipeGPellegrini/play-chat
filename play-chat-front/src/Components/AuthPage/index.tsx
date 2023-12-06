@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import './styles.scss';
 
-const socket = io('https://15.228.244.200:3000');
+const socket = io('http://15.228.244.200:3000');
 
 interface User {
   name: string;
