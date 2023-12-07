@@ -2,24 +2,36 @@
 
 O Play Chat é um sistema de chat em tempo real desenvolvido com tecnologias modernas e bastante utilizadas no mercado de trabalho. O projeto é dividido em frontend e backend, utilizando React para o frontend, NestJS como framework para o backend, e PostgreSQL como banco de dados. A aplicação foi planejada para fornecer uma experiência de chat intuitiva e em tempo real para os usuários.
 
+# Tecnologias
+
+<img src="https://icons8.com.br/icon/NfbyHexzVEDk/reagir">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+
+
 # Arquitetura
 
 # Backend
 
 O backend foi desenvolvido utilizando o framework NestJS, que tem como base o Node.js. O banco de dados PostgreSQL foi escolhido para armazenar dados relacionados aos usuários.
-O PostgreSQL foi hospedado na AWS, assim como o código em NestJS.
+O PostgreSQL foi hospedado na AWS RDS, e o código em NestJS na adaptable.io.
 
 # Frontend
 
-O frontend foi desenvolvido utilizando React, oferecendo uma interface de usuário responsiva e interativa. O Sass foi adotado para estilizar os componentes.
+O frontend foi desenvolvido utilizando React, oferecendo uma interface de usuário responsiva e interativa. O Sass foi adotado para estilizar os componentes. E está hospedado no netlify.
 
 # Problemas Conhecidos e Possíveis Melhorias
 
-Erro de SSL: Não foi possível resolver o erro de SSL para hospedar a aplicação completa. Esse erro acontece pois os navegadores prezam pela segurança e não permite trocar informações com conexão http.
+Erro de CORS: O servidor ao se comunicar com o frontend dependendo do navegador pode emitir erro de Cors, isso será resolvido em breve.
 
 Tela de Cadastro Separada do Login: Atualmente, o projeto possui uma tela de autenticação combinada. Para separar as telas de cadastro e login, podem ser feitas alterações no frontend e backend para criar rotas distintas e interfaces de usuário.
 
 Esqueci a senha: Poderá ser implementado um método para recuperar a senha, no qual seria por meio de verificação via email utilizado no cadastro.
+
+Usuário único por sessão: Cada sessão o usuário pode colocar qualquer nome, logo podendo repetir dos usuários que já estão conectados. Penso em alterar isso para cada usuário da sessão ter um nome único.
 
 # Conclusão 
 
@@ -27,15 +39,29 @@ O Play Chat oferece uma plataforma de chat em tempo real robusta, com potencial 
 
 # Como executar o projeto?
 
-1 - Clone a pasta play-chat-front (Você só precisará dessa pasta, pois o restante está sendo executado na AWS).
+1 - Clone o repositório com: git clone https://github.com/FelipeGPellegrini/play-chat.git
+                             cd play-chat
 
-2- Abra o terminal na raíz da pasta.
+2- Entre na pasta play-chat-front
 
-3- Rode o comando 'yarn' ou 'npm install'
+3- Rode o comando 'yarn' ou 'npm install' para instalar as dependências.
 
-4- Execute o comando 'yarn start' ou 'npm start'
+4- Altere o link:'https://play-chat-deploy.adaptable.app' que está no Componente AuthPage para "localhost:3000", isso vai garantir que o frontend se conecte com o backend que está configurado para rodar nessa porta.
 
-5- Pronto, sua aplicação já estará funcionando, caso não tenha modificado a porta estará rodando em: "http://localhost:5173/"
+5- Execute o comando 'yarn dev' ou 'npm run dev' para iniciar a aplicação.
+
+6- Agora entre na pasta play-chat-back
+
+7- Execute o comando 'yarn' ou 'npm install' para instalar as dependências.
+
+8- Entre na pasta src e rode o comando "docker-compose up -d" para iniciar o banco de dados com Docker.
+
+9- Configure o arquivo "app.module.ts" com as credenciais do arquivo "docker-compose.yml"
+
+10- Agora basta rodar o comando "nest start" na raíz do projeto.
+
+- Com esses passos você já estará rodando a aplicação no servidor local, caso não tenha modificado a porta estará rodando em: "http://localhost:5173/".
+
 
 # Imagens do projeto
 
