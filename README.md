@@ -2,15 +2,15 @@
 
 O Play Chat é um sistema de chat em tempo real desenvolvido com tecnologias modernas e bastante utilizadas no mercado de trabalho. O projeto é dividido em frontend e backend, utilizando React para o frontend, NestJS como framework para o backend, e PostgreSQL como banco de dados. A aplicação foi planejada para fornecer uma experiência de chat intuitiva e em tempo real para os usuários.
 
-# Tecnologias
+# Tecnologias utilizadas
 
 
-<img width="50px" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg">
-<img width="50px" src="https://sass-lang.com/assets/img/styleguide/seal-color.png">
-<img width="50px"  src="https://raw.githubusercontent.com/microsoft/TypeScript-Website/f407e1ae19e5e990d9901ac8064a32a8cc60edf0/packages/typescriptlang-org/static/branding/ts-logo-512.svg">
-<img width="50px"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NestJS.svg/1200px-NestJS.svg.png">
-<img src="">
-<img src="">
+<img width="80px" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg">
+<img width="80px" src="https://sass-lang.com/assets/img/styleguide/seal-color.png">
+<img width="80px"  src="https://raw.githubusercontent.com/microsoft/TypeScript-Website/f407e1ae19e5e990d9901ac8064a32a8cc60edf0/packages/typescriptlang-org/static/branding/ts-logo-512.svg">
+<img width="80px" src="https://seeklogo.com/images/N/nodejs-logo-54107C5EDD-seeklogo.com.png?v=638179441380000000">
+<img width="80px"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NestJS.svg/1200px-NestJS.svg.png">
+<img width="80px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/993px-Postgresql_elephant.svg.png">
 
 
 # Arquitetura
