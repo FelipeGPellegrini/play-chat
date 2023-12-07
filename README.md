@@ -4,7 +4,7 @@ O Play Chat é um sistema de chat em tempo real desenvolvido com tecnologias mod
 
 # Tecnologias utilizadas
 
-<div display="flex">
+<div display="flex" padding="10px" justify-content="center">
   <img width="80px" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg">
 <img width="80px" src="https://sass-lang.com/assets/img/styleguide/seal-color.png">
 <img width="80px"  src="https://raw.githubusercontent.com/microsoft/TypeScript-Website/f407e1ae19e5e990d9901ac8064a32a8cc60edf0/packages/typescriptlang-org/static/branding/ts-logo-512.svg">
