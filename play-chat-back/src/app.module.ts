@@ -11,10 +11,10 @@ config();
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: process.env.DB_URL,
-      port: Number(process.env.PORT),
-      username: process.env.USERNAME,
-      password: process.env.PASSWORD,
+      host: 'play-chat.c8jmon7bi712.us-east-2.rds.amazonaws.com',
+      port: 5432,
+      username: 'chat',
+      password: 'chat1234',
       database: 'postgres',
       entities: [User],
       synchronize: true,
